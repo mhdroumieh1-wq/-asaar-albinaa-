@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Syria Construction Prices</title>
+<style>
+:root{
+  --navy:#1F3864; --navy2:#2F5496; --bg:#F4F6FA; --card:#FFFFFF; --ink:#1B2333; --muted:#6B7488; --line:#E3E7EF;
+  --up:#C62828; --down:#2E7D32; --ok:#2E7D32; --warn:#B26A00; --gray:#8A93A6; --mine:#6A1B9A; --chip:#E8EDF7;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 Roboto,"Segoe UI",Arial,sans-serif}
+button,select,input,textarea{font:inherit;color:inherit}
+header{background:var(--navy);color:#fff;padding:14px 16px 10px;position:sticky;top:0;z-index:5}
+.top{display:flex;align-items:center;gap:10px}
+.top h1{font-size:18px;margin:0;flex:1;font-weight:600;letter-spacing:.2px}
+.iconbtn{background:rgba(255,255,255,.12);border:0;color:#fff;border-radius:10px;width:38px;height:38px;display:grid;place-items:center}
+.iconbtn svg{width:20px;height:20px}
+.spin svg{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.sub{font-size:12px;opacity:.85;margin-top:4px}
+.fx{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.fx span{background:rgba(255,255,255,.14);border-radius:999px;padding:3px 10px;font-size:12px}
+.search{margin-top:10px;position:relative}
+.search input{width:100%;border:0;border-radius:12px;padding:11px 38px 11px 40px;background:#fff;color:var(--ink);outline:none}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted)}
+.search .clr{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:var(--muted);font-size:20px;width:32px;height:32px;display:none}
+.controls{display:flex;gap:8px;padding:10px 16px 0}
+.controls select{flex:1;min-width:0;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px}
+.seg{display:flex;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;flex-shrink:0}
+.seg button{border:0;background:none;padding:8px 10px;font-size:13px;color:var(--muted)}
+.seg button.on{background:var(--navy);color:#fff}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex-shrink:0;border:0;background:var(--chip);color:var(--navy);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:500}
+.chip.on{background:var(--navy);color:#fff}
+.chip small{opacity:.7;margin-left:4px}
+main{padding:0 16px 90px}
+.grp{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin:14px 2px 6px}
+.card{background:var(--card);border-radius:14px;padding:12px 14px;margin-bottom:8px;box-shadow:0 1px 2px rgba(20,30,60,.06);display:flex;gap:10px;align-items:flex-start}
+.card .l{flex:1;min-width:0}
+.card .nm{font-weight:600;font-size:15px}
+.card .sp{font-size:12px;color:var(--muted);margin-top:1px}
+.card .mt{font-size:11.5px;color:var(--muted);margin-top:6px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.card .r{text-align:right;flex-shrink:0;max-width:52%}
+.pr{font-weight:700;font-size:15px;color:var(--navy);white-space:nowrap}
+.pr2{font-size:12px;color:var(--muted);white-space:nowrap}
+.un{font-size:11.5px;color:var(--muted)}
+.badge{font-size:10.5px;font-weight:700;border-radius:6px;padding:1px 6px;letter-spacing:.3px}
+.b-off{background:#E6F4EA;color:var(--ok)} .b-est{background:#FFF3E0;color:var(--warn)} .b-old{background:#FDECEA;color:var(--up)}
+.b-nd{background:#EEF0F4;color:var(--gray)} .b-mine{background:#F3E5F5;color:var(--mine)}
+.tr{font-size:12px;font-weight:700} .tr.up{color:var(--up)} .tr.dn{color:var(--down)} .tr.fl{color:var(--gray)}
+.mine{font-size:12px;color:var(--mine);margin-top:3px;white-space:nowrap}
+.nd{color:var(--gray);font-size:13px;font-weight:600}
+.empty{text-align:center;color:var(--muted);padding:40px 10px}
+.foot{font-size:11.5px;color:var(--muted);text-align:center;padding:18px 8px}
+.fab{position:fixed;right:18px;bottom:22px;background:var(--mine);color:#fff;border:0;border-radius:16px;padding:14px 18px;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.2);display:none}
+/* sheets */
+.sheet{position:fixed;inset:0;background:var(--bg);z-index:20;overflow-y:auto;display:none;animation:up .18s ease-out}
+@keyframes up{from{transform:translateY(16px);opacity:.4}to{transform:none;opacity:1}}
+.sheet header{display:flex;align-items:center;gap:10px}
+.sheet header h2{font-size:17px;margin:0;flex:1;font-weight:600}
+.sec{background:#fff;border-radius:14px;padding:14px;margin:12px 16px}
+.sec h3{margin:0 0 8px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+.big{font-size:22px;font-weight:700;color:var(--navy)}
+.src{border-top:1px solid var(--line);padding:10px 0}
+.src:first-of-type{border-top:0;padding-top:2px}
+.src .a{display:flex;justify-content:space-between;gap:8px;font-weight:600}
+.src .b{font-size:12.5px;color:var(--muted);margin-top:2px}
+.src a,.link{color:var(--navy2);text-decoration:none;font-size:13px;font-weight:500}
+.btn{border:0;border-radius:12px;padding:12px 16px;font-weight:600;background:var(--navy);color:#fff;width:100%}
+.btn.ghost{background:var(--chip);color:var(--navy)}
+.btn.del{background:#FDECEA;color:var(--up);width:auto;padding:6px 10px;font-size:12px}
+.row{display:flex;gap:8px}
+label{display:block;font-size:12.5px;color:var(--muted);margin:10px 0 4px}
+.f{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff}
+svg.spark{width:100%;height:70px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#222;color:#fff;padding:10px 16px;border-radius:10px;font-size:13px;z-index:50;display:none;max-width:90%}
+.mrow{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding:10px 0}
+.mrow:first-of-type{border-top:0}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <div class="top">
+    <h1>Syria Construction Prices</h1>
+    <button class="iconbtn" id="refresh" aria-label="Refresh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></button>
+  </div>
+  <div class="sub" id="updated">Loading…</div>
+  <div class="fx" id="fx"></div>
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="q" type="text" placeholder="Search: cement, rebar, paint, excavator, diesel, engineer…" autocomplete="off">
+    <button class="clr" id="clr" aria-label="Clear">×</button>
+  </div>
+</header>
+<div class="controls">
+  <select id="region"></select>
+  <div class="seg" id="cur"><button data-c="SYP">SYP</button><button data-c="USD">USD</button><button data-c="BOTH" class="on">Both</button></div>
+</div>
+<div class="chips" id="chips"></div>
+<main id="list"></main>
+<button class="fab" id="fab">+ Add my price</button>
+
+<section class="sheet" id="detail"></section>
+<section class="sheet" id="form"></section>
+<div class="toast" id="toast"></div>
+
+<script>
+'use strict';
+const DATA_URL = 'https://raw.githubusercontent.com/mhdroumieh1-wq/-asaar-albinaa-/main/data/prices.json';
+const CATS = [['All','All'],['Materials','Materials'],['Finishes','Finishes'],['Equipment','Equipment Rental'],['Fuel','Fuel'],['Labour','Labour & Salaries'],['Building Cost','Building Cost'],['Mine','My Prices']];
+const N = window.Native || null;
+const st = {data:null, cat:'All', q:'', region:'All regions', cur:'BOTH', open:null};
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+function toast(t){ const el=$('#toast'); el.textContent=t; el.style.display='block'; clearTimeout(toast._t); toast._t=setTimeout(()=>el.style.display='none',2600); }
+function rate(){ return st.data && st.data.fx && st.data.fx.market ? st.data.fx.market.rate : 139; }
+function conv(v, from, to){ if(from===to) return v; return from==='USD' ? v*rate() : v/rate(); }
+function fmt(v, c){
+  if(v==null || isNaN(v)) return '–';
+  if(c==='USD'){ const d = v<10 ? 2 : (v<100 ? 1 : 0); return '$' + Number(v.toFixed(d)).toLocaleString('en-US',{maximumFractionDigits:d}); }
+  return Math.round(v).toLocaleString('en-US') + ' SYP';
+}
+function fmtRange(lo, hi, c){
+  if(Math.abs(lo-hi) < 1e-9) return fmt(lo,c);
+  if(c==='USD') return fmt(lo,c) + ' – ' + fmt(hi,c);
+  return Math.round(lo).toLocaleString('en-US') + ' – ' + Math.round(hi).toLocaleString('en-US') + ' SYP';
+}
+function fdate(d){ if(!d) return ''; const t = new Date(d + (d.length===10?'T12:00:00':'')); return isNaN(t) ? d : t.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}); }
+function ageDays(d){ const t = new Date(d + 'T12:00:00'); return Math.floor((Date.now() - t.getTime())/86400000); }
+
+/* ---------- data loading ---------- */
+function useData(txt, fromNet){
+  try{
+    const d = JSON.parse(txt);
+    if(!d || !Array.isArray(d.items)) return false;
+    if(st.data && fromNet && d.updated <= st.data.updated){ st.data = d; render(); return true; }
+    st.data = d;
+    if(fromNet && N) N.writeCache(txt);
+    render();
+    return true;
+  }catch(e){ return false; }
+}
+function loadLocal(){
+  let txt = N ? N.readCache() : '';
+  let bundled = N ? N.readAsset('data/prices.json') : '';
+  // use whichever is newer
+  let best = null;
+  [txt, bundled].forEach(t => { try{ const d = JSON.parse(t); if(d && d.items && (!best || d.updated > best.updated)) best = d; }catch(e){} });
+  if(best){ st.data = best; render(); return Promise.resolve(); }
+  return fetch('data/prices.json').then(r=>r.text()).then(t=>{ useData(t,false); }).catch(()=>{ $('#list').innerHTML='<div class="empty">No data available yet.</div>'; });
+}
+window.__onRemote = function(txt){
+  $('#refresh').classList.remove('spin');
+  if(!txt){ toast('Offline – showing saved prices'); return; }
+  const before = st.data ? st.data.updated : '';
+  if(useData(txt, true)) toast(st.data.updated > before ? 'Prices updated' : 'Prices are up to date');
+};
+function refresh(){
+  $('#refresh').classList.add('spin');
+  const url = DATA_URL + '?t=' + Date.now();
+  if(N) N.fetchAsync(url, 'window.__onRemote');
+  else fetch(url,{cache:'no-store'}).then(r=>r.ok?r.text():'').then(window.__onRemote).catch(()=>window.__onRemote(''));
+}
+
+/* ---------- aggregation ---------- */
+function mine(){ return store.get('myPrices', []); }
+function entriesFor(it){
+  const ps = it.prices || [];
+  if(st.region==='All regions') return ps;
+  const exact = ps.filter(p => p.region===st.region);
+  return exact.length ? exact : ps.filter(p => p.region==='Syria (general)');
+}
+function agg(it, c){
+  const es = entriesFor(it); if(!es.length) return null;
+  let lo=Infinity, hi=-Infinity, date='';
+  es.forEach(p => { lo=Math.min(lo, conv(p.low,p.currency,c)); hi=Math.max(hi, conv(p.high,p.currency,c)); if(p.date>date) date=p.date; });
+  return {lo, hi, date, n:es.length, regions:[...new Set(es.map(p=>p.region))]};
+}
+function trend(it){
+  const h = it.history || []; if(h.length<2) return null;
+  const a = h[h.length-2].usd, b = h[h.length-1].usd; if(!a) return null;
+  return (b-a)/a*100;
+}
+function badgeFor(it, a){
+  if(!a) return '<span class="badge b-nd">NO DATA</span>';
+  const age = ageDays(a.date);
+  if(age > 120) return '<span class="badge b-old">OLD</span>';
+  if(it.kind==='official') return '<span class="badge b-off">OFFICIAL</span>';
+  if(a.n < 2 || age > 45) return '<span class="badge b-est">ESTIMATE</span>';
+  return '<span class="badge b-off">MARKET</span>';
+}
+function priceHTML(lo, hi, cls){
+  const c = st.cur;
+  if(c==='SYP') return `<div class="${cls}">${fmtRange(lo.syp,hi.syp,'SYP')}</div>`;
+  if(c==='USD') return `<div class="${cls}">${fmtRange(lo.usd,hi.usd,'USD')}</div>`;
+  return `<div class="${cls}">${fmtRange(lo.syp,hi.syp,'SYP')}</div><div class="pr2">≈ ${fmtRange(lo.usd,hi.usd,'USD')}</div>`;
+}
+function both(it){
+  const s = agg(it,'SYP'), u = agg(it,'USD'); if(!s) return null;
+  return {lo:{syp:s.lo,usd:u.lo}, hi:{syp:s.hi,usd:u.hi}, a:s};
+}
+
+/* ---------- search ---------- */
+function norm(s){ return String(s||'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim(); }
+function matches(it, q){
+  if(!q) return true;
+  const hay = norm([it.name,it.spec,it.category,it.subcategory,it.unit,it.tags].join(' '));
+  return norm(q).split(' ').every(w => hay.includes(w) || hay.split(' ').some(h => h.startsWith(w)));
+}
+
+/* ---------- render ---------- */
+function renderHeader(){
+  const d = st.data;
+  $('#updated').textContent = 'Updated ' + fdate(d.updated.slice(0,10)) + ' · ' + d.items.filter(i=>i.prices&&i.prices.length).length + ' priced items';
+  const fx = d.fx || {};
+  $('#fx').innerHTML = (fx.market?`<span>Market: 1 USD = ${fx.market.rate} SYP</span>`:'') + (fx.official?`<span>Official: ${fx.official.rate} SYP</span>`:'');
+  const rs = ['All regions'].concat(d.regions||[]);
+  const sel = $('#region');
+  if(sel.options.length !== rs.length){ sel.innerHTML = rs.map(r=>`<option>${esc(r)}</option>`).join(''); }
+  sel.value = st.region;
+}
+function renderChips(){
+  const items = st.data.items.filter(it => matches(it, st.q));
+  const m = mine().filter(x => matches({name:x.name,tags:x.supplier+' '+x.note,category:'Mine'}, st.q));
+  $('#chips').innerHTML = CATS.map(([k,l]) => {
+    const n = k==='All' ? items.length : (k==='Mine' ? m.length : items.filter(i=>i.category===k).length);
+    return `<button class="chip ${st.cat===k?'on':''}" data-k="${esc(k)}">${esc(l)}<small>${n}</small></button>`;
+  }).join('');
+}
+function cardHTML(it){
+  const b = both(it), t = trend(it), my = mine().filter(x => x.itemId===it.id);
+  let right;
+  if(b){ right = priceHTML(b.lo, b.hi, 'pr') + `<div class="un">per ${esc(it.unit)}</div>`; }
+  else right = `<div class="nd">No data yet</div><div class="un">per ${esc(it.unit)}</div>`;
+  if(my.length){ const x = my[my.length-1]; right += `<div class="mine">My: ${fmt(+x.price, x.currency)}</div>`; }
+  let tr = '';
+  if(t!=null) tr = Math.abs(t) < 1 ? '<span class="tr fl">● 0%</span>' : (t>0 ? `<span class="tr up">▲ ${t.toFixed(1)}%</span>` : `<span class="tr dn">▼ ${Math.abs(t).toFixed(1)}%</span>`);
+  const meta = b ? `${badgeFor(it,b.a)}<span>${esc(b.a.regions.join(', '))}</span><span>· ${fdate(b.a.date)}</span><span>· ${b.a.n} source${b.a.n>1?'s':''}</span>${tr}` : badgeFor(it,null);
+  return `<div class="card" data-id="${esc(it.id)}"><div class="l"><div class="nm">${esc(it.name)}</div>${it.spec?`<div class="sp">${esc(it.spec)}</div>`:''}<div class="mt">${meta}</div></div><div class="r">${right}</div></div>`;
+}
+function render(){
+  if(!st.data) return;
+  renderHeader(); renderChips();
+  $('#fab').style.display = st.cat==='Mine' ? 'block' : 'none';
+  const L = $('#list');
+  if(st.cat==='Mine'){ L.innerHTML = mineHTML(); return; }
+  let items = st.data.items.filter(it => (st.cat==='All' || it.category===st.cat) && matches(it, st.q));
+  if(!items.length){ L.innerHTML = `<div class="empty">No items match “${esc(st.q)}”.</div>`; return; }
+  const groups = {};
+  items.forEach(it => { const g = (st.cat==='All' ? it.category + ' · ' : '') + it.subcategory; (groups[g] = groups[g] || []).push(it); });
+  L.innerHTML = Object.keys(groups).map(g => `<div class="grp">${esc(g)}</div>` + groups[g].map(cardHTML).join('')).join('') +
+    `<div class="foot">Indicative prices collected daily from public sources (news, supplier sites, official bulletins and public social-media posts). Prices vary by supplier, quantity and location. Always confirm with a quotation.<br>${esc(st.data.fx && st.data.fx.note || '')}</div>`;
+}
+function mineHTML(){
+  const m = mine().filter(x => !st.q || norm(x.name+' '+x.supplier+' '+x.note).includes(norm(st.q)));
+  if(!m.length) return '<div class="empty">You have not added any prices yet.<br><br>Tap <b>+ Add my price</b> to record a quotation from a supplier or contractor. Your prices stay on this phone.</div>';
+  return '<div class="grp">My saved prices</div>' + m.slice().reverse().map(x => {
+    const other = x.currency==='USD' ? fmt(conv(+x.price,'USD','SYP'),'SYP') : fmt(conv(+x.price,'SYP','USD'),'USD');
+    return `<div class="card" data-mine="${esc(x.id)}"><div class="l"><div class="nm">${esc(x.name)}</div><div class="sp">${esc([x.supplier,x.note].filter(Boolean).join(' · '))}</div><div class="mt"><span class="badge b-mine">MY PRICE</span><span>${esc(x.region)}</span><span>· ${fdate(x.date)}</span></div></div><div class="r"><div class="pr" style="color:var(--mine)">${fmt(+x.price,x.currency)}</div><div class="pr2">≈ ${other}</div><div class="un">per ${esc(x.unit)}</div></div></div>`;
+  }).join('');
+}
+
+/* ---------- detail ---------- */
+function spark(h){
+  if(!h || h.length<2) return '<div class="b" style="font-size:12.5px;color:var(--muted)">Price history builds up with each daily update.</div>';
+  const pts = h.slice(-60), vs = pts.map(p=>p.usd), mn = Math.min(...vs), mx = Math.max(...vs), W=300, H=60;
+  const xy = pts.map((p,i)=>[i*(W/(pts.length-1)), H-6-((p.usd-mn)/((mx-mn)||1))*(H-12)]);
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><polyline fill="none" stroke="#2F5496" stroke-width="2.5" points="${xy.map(a=>a.join(',')).join(' ')}"/></svg><div style="display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)"><span>${fdate(pts[0].date)}</span><span>${fdate(pts[pts.length-1].date)}</span></div>`;
+}
+function openDetail(id){
+  const it = st.data.items.find(i=>i.id===id); if(!it) return;
+  st.open = 'detail';
+  const b = both(it), my = mine().filter(x=>x.itemId===id);
+  const srcs = (it.prices||[]).map(p => {
+    const c2 = p.currency==='USD' ? 'SYP' : 'USD';
+    return `<div class="src"><div class="a"><span>${esc(p.region)}</span><span>${fmtRange(p.low,p.high,p.currency)}</span></div>
+      <div class="b">≈ ${fmtRange(conv(p.low,p.currency,c2),conv(p.high,p.currency,c2),c2)} · ${fdate(p.date)}${p.note?' · '+esc(p.note):''}</div>
+      <div class="b"><a href="#" data-url="${esc(p.url)}">${esc(p.source)} ↗</a></div></div>`;
+  }).join('') || '<div class="b" style="color:var(--muted)">No published price found yet. The daily update keeps searching; you can add your own price below.</div>';
+  const myh = my.length ? my.slice().reverse().map(x=>`<div class="mrow"><div><b style="color:var(--mine)">${fmt(+x.price,x.currency)}</b> <span style="font-size:12px;color:var(--muted)">/ ${esc(x.unit)} · ${esc(x.region)} · ${fdate(x.date)}${x.supplier?' · '+esc(x.supplier):''}</span></div><button class="btn del" data-del="${esc(x.id)}">Delete</button></div>`).join('') : '<div style="font-size:13px;color:var(--muted)">None yet.</div>';
+  $('#detail').innerHTML = `<header><button class="iconbtn" data-close>←</button><h2>${esc(it.subcategory)}</h2></header>
+   <div class="sec"><div style="font-weight:700;font-size:17px">${esc(it.name)}</div>${it.spec?`<div class="sp" style="color:var(--muted);font-size:13px">${esc(it.spec)}</div>`:''}
+     <div style="margin-top:10px">${b ? priceHTML(b.lo,b.hi,'big') : '<div class="nd">No data yet</div>'}<div class="un">per ${esc(it.unit)}${b?' · '+(st.region==='All regions'?'all regions':esc(st.region)):''}</div></div>
+     <div class="mt" style="margin-top:8px;display:flex;gap:6px;font-size:12px;color:var(--muted)">${badgeFor(it,b&&b.a)}</div></div>
+   <div class="sec"><h3>Sources</h3>${srcs}</div>
+   <div class="sec"><h3>Trend (USD equivalent)</h3>${spark(it.history)}</div>
+   <div class="sec"><h3>My prices</h3>${myh}<div style="margin-top:10px"><button class="btn" data-add="${esc(id)}" style="background:var(--mine)">+ Add my price for this item</button></div></div>
+   <div class="foot">Converted at the market rate of 1 USD = ${rate()} SYP.</div>`;
+  $('#detail').style.display='block'; $('#detail').scrollTop=0;
+}
+
+/* ---------- my price form ---------- */
+function openForm(itemId){
+  st.open = 'form';
+  const it = itemId ? st.data.items.find(i=>i.id===itemId) : null;
+  const opts = '<option value="">— Other (type a name) —</option>' + st.data.items.map(i=>`<option value="${esc(i.id)}" ${it&&i.id===it.id?'selected':''}>${esc(i.name)}</option>`).join('');
+  const regs = (st.data.regions||[]).map(r=>`<option ${r===(st.region==='All regions'?'Damascus':st.region)?'selected':''}>${esc(r)}</option>`).join('');
+  const today = new Date().toISOString().slice(0,10);
+  $('#form').innerHTML = `<header><button class="iconbtn" data-close>←</button><h2>Add my price</h2></header>
+  <div class="sec">
+   <label>Item</label><select class="f" id="f_item">${opts}</select>
+   <div id="f_namew" style="display:${it?'none':'block'}"><label>Item name</label><input class="f" id="f_name" placeholder="e.g. Ready-mix C25 from supplier X"></div>
+   <div class="row"><div style="flex:2"><label>Price</label><input class="f" id="f_price" type="number" inputmode="decimal" step="any" placeholder="0"></div>
+   <div style="flex:1"><label>Currency</label><select class="f" id="f_cur"><option>SYP</option><option>USD</option></select></div></div>
+   <div class="row"><div style="flex:1"><label>Unit</label><input class="f" id="f_unit" value="${esc(it?it.unit:'')}" placeholder="ton, m³, m², day…"></div>
+   <div style="flex:1"><label>Region</label><select class="f" id="f_reg">${regs}</select></div></div>
+   <label>Supplier / contractor</label><input class="f" id="f_sup" placeholder="Optional">
+   <label>Date</label><input class="f" id="f_date" type="date" value="${today}">
+   <label>Note</label><textarea class="f" id="f_note" rows="2" placeholder="Optional – quantity, delivery, payment terms…"></textarea>
+   <div style="margin-top:14px"><button class="btn" id="f_save" style="background:var(--mine)">Save</button></div>
+   <div style="font-size:12px;color:var(--muted);margin-top:10px">Your prices are saved on this phone only and are shown next to the market price.</div>
+  </div>`;
+  $('#form').style.display='block';
+  $('#f_item').onchange = e => { const x = st.data.items.find(i=>i.id===e.target.value); $('#f_namew').style.display = x?'none':'block'; if(x) $('#f_unit').value = x.unit; };
+  $('#f_save').onclick = () => {
+    const id = $('#f_item').value, x = st.data.items.find(i=>i.id===id);
+    const name = x ? x.name : $('#f_name').value.trim(), price = parseFloat($('#f_price').value);
+    if(!name){ toast('Enter an item name'); return; }
+    if(!(price>0)){ toast('Enter a valid price'); return; }
+    const m = mine();
+    m.push({id:'m'+Date.now(), itemId:x?x.id:'', name, price, currency:$('#f_cur').value, unit:$('#f_unit').value.trim()||'unit', region:$('#f_reg').value, supplier:$('#f_sup').value.trim(), date:$('#f_date').value||today, note:$('#f_note').value.trim()});
+    store.set('myPrices', m); closeSheet('form'); toast('Saved'); render(); if(st.open==='detail' && x) openDetail(x.id);
+  };
+}
+function closeSheet(which){
+  const w = which || (($('#form').style.display==='block') ? 'form' : 'detail');
+  $('#'+w).style.display='none';
+  st.open = $('#detail').style.display==='block' ? 'detail' : null;
+}
+window.onBack = function(){ if($('#form').style.display==='block'){ closeSheet('form'); return true; } if($('#detail').style.display==='block'){ closeSheet('detail'); return true; } return false; };
+
+/* ---------- events ---------- */
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-k],[data-id],[data-close],[data-url],[data-add],[data-del],[data-mine],#fab,#refresh,#clr,#cur button');
+  if(!t) return;
+  if(t.dataset.url){ e.preventDefault(); if(N) N.openUrl(t.dataset.url); else window.open(t.dataset.url,'_blank'); return; }
+  if(t.dataset.k){ st.cat = t.dataset.k; store.set('cat', st.cat); render(); window.scrollTo(0,0); return; }
+  if(t.hasAttribute('data-close')){ closeSheet(t.closest('.sheet').id); return; }
+  if(t.dataset.add){ openForm(t.dataset.add); return; }
+  if(t.dataset.del){ store.set('myPrices', mine().filter(x=>x.id!==t.dataset.del)); toast('Deleted'); render(); const it=$('#detail').style.display==='block'; if(it){ const id=($('#detail [data-add]')||{}).dataset; if(id) openDetail(id.add); } return; }
+  if(t.dataset.mine){ if(confirmDel(t.dataset.mine)) render(); return; }
+  if(t.dataset.id){ openDetail(t.dataset.id); return; }
+  if(t.id==='fab'){ openForm(null); return; }
+  if(t.id==='refresh'){ refresh(); return; }
+  if(t.id==='clr'){ $('#q').value=''; st.q=''; $('#clr').style.display='none'; render(); return; }
+  if(t.dataset.c){ st.cur = t.dataset.c; store.set('cur', st.cur); document.querySelectorAll('#cur button').forEach(b=>b.classList.toggle('on', b.dataset.c===st.cur)); render(); }
+});
+let delArm = null;
+function confirmDel(id){
+  if(delArm===id){ store.set('myPrices', mine().filter(x=>x.id!==id)); toast('Deleted'); delArm=null; return true; }
+  delArm = id; toast('Tap again to delete this price'); setTimeout(()=>{ if(delArm===id) delArm=null; }, 3000); return false;
+}
+$('#q').addEventListener('input', e => { st.q = e.target.value; $('#clr').style.display = st.q?'block':'none'; if(st.cat==='Mine' && st.q) {} render(); });
+$('#region').addEventListener('change', e => { st.region = e.target.value; store.set('region', st.region); render(); });
+
+/* ---------- start ---------- */
+st.cat = store.get('cat','All'); st.cur = store.get('cur','BOTH'); st.region = store.get('region','All regions');
+document.querySelectorAll('#cur button').forEach(b=>b.classList.toggle('on', b.dataset.c===st.cur));
+loadLocal().then(()=>setTimeout(refresh, 400));
+</script>
+</body>
+</html>

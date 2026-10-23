@@ -1,0 +1,3 @@
+android/build/
+android/assets/data/prices.json
+*.keystore

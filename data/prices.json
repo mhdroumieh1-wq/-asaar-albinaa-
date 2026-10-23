@@ -1,0 +1,1886 @@
+{
+ "app": "Syria Construction Prices",
+ "schema": 1,
+ "updated": "2026-10-23T16:30:16+03:00",
+ "fx": {
+  "official": {
+   "rate": 122.0,
+   "date": "2026-10-22",
+   "source": "Central Bank of Syria bulletin (via Verify-Sy)",
+   "url": "https://www.verify-sy.com/ar/topic/economy/newsroom/exchange-rates-in-syria-22OCT"
+  },
+  "market": {
+   "rate": 139.25,
+   "date": "2026-10-22",
+   "source": "Aksalser – parallel market rates",
+   "url": "https://www.aksalser.com/news/2026/10/22/%D8%B3%D8%B9%D8%B1-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%88-%D8%A7%D9%84%D9%8A%D9%88%D8%B1%D9%88-%D9%88-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%85%D9%82%D8%A7%D8%A8%D9%84-2225/"
+  },
+  "note": "New Syrian pound (2 zeros removed in 2026). Conversions use the market rate."
+ },
+ "regions": [
+  "Syria (general)",
+  "Damascus",
+  "Rif Dimashq",
+  "Aleppo",
+  "Homs",
+  "Hama",
+  "Latakia",
+  "Tartus"
+ ],
+ "categories": [
+  "Materials",
+  "Finishes",
+  "Equipment",
+  "Fuel",
+  "Labour",
+  "Building Cost"
+ ],
+ "items": [
+  {
+   "id": "rebar",
+   "category": "Materials",
+   "subcategory": "Steel",
+   "name": "Reinforcing Steel Bar (Rebar)",
+   "spec": "Deformed bar 8–25 mm",
+   "unit": "ton",
+   "kind": "market",
+   "tags": "iron steel hadid حديد",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 125000,
+     "high": 140000,
+     "currency": "SYP",
+     "date": "2026-09-24",
+     "source": "Shofey – Damascus building material prices",
+     "url": "https://shofey.com/blog/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%AF%D9%85%D8%B4%D9%82",
+     "note": "12 mm and 14 mm bars, market price"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 600,
+     "high": 670,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/",
+     "note": "12 mm, linked to global steel price"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 850,
+     "high": 950,
+     "currency": "USD",
+     "date": "2026-06-01",
+     "source": "Yahya Construction – cost per m² 2026",
+     "url": "https://yahyaconstruction.com/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D9%85%D8%AA%D8%B1-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7/",
+     "note": "Retail estimate"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 828.842
+    }
+   ]
+  },
+  {
+   "id": "cement-bag",
+   "category": "Materials",
+   "subcategory": "Cement",
+   "name": "Portland Cement – Bagged",
+   "spec": "OPC 42.5, 50 kg bags",
+   "unit": "ton",
+   "kind": "market",
+   "tags": "cement asmant اسمنت",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 19500,
+     "high": 24000,
+     "currency": "SYP",
+     "date": "2026-09-24",
+     "source": "Shofey – Damascus building material prices",
+     "url": "https://shofey.com/blog/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%AF%D9%85%D8%B4%D9%82",
+     "note": "20 bags of 50 kg; ≈ 975–1,200 SYP per bag"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 110,
+     "high": 150,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 143.0969
+    }
+   ]
+  },
+  {
+   "id": "cement-factory",
+   "category": "Materials",
+   "subcategory": "Cement",
+   "name": "Cement – Ex-Factory (Omran)",
+   "spec": "",
+   "unit": "ton",
+   "kind": "market",
+   "tags": "cement omran عمران",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 100,
+     "high": 120,
+     "currency": "USD",
+     "date": "2026-04-19",
+     "source": "Al Arabiya – Omran cement price",
+     "url": "https://www.alarabiya.net/aswaq/economy/2026/04/19/%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D9%83%D8%A8%D9%8A%D8%B1-%D8%A8%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%A7%D8%B3%D9%85%D9%86%D8%AA-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D9%88%D8%AE%D8%B7%D8%B7-%D9%84%D8%A7%D8%B9%D8%A7%D8%AF%D8%A9-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9",
+     "note": "State company Omran ex-factory; transport extra"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 110.0
+    }
+   ]
+  },
+  {
+   "id": "sand",
+   "category": "Materials",
+   "subcategory": "Aggregates",
+   "name": "Building Sand",
+   "spec": "",
+   "unit": "m³",
+   "kind": "market",
+   "tags": "sand raml رمل",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 3500,
+     "high": 5000,
+     "currency": "SYP",
+     "date": "2026-09-24",
+     "source": "Shofey – Damascus building material prices",
+     "url": "https://shofey.com/blog/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%AF%D9%85%D8%B4%D9%82",
+     "note": "Clean black/silt sand delivered to site"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 18,
+     "high": 29,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "Qiwaa – sand and gravel prices 2026",
+     "url": "https://qiwaa.com/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D9%88%D8%A7%D9%84%D8%A8%D8%AD%D8%B5-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-2026/",
+     "note": "Washed or building sand"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 27.0103
+    }
+   ]
+  },
+  {
+   "id": "gravel",
+   "category": "Materials",
+   "subcategory": "Aggregates",
+   "name": "Gravel (Concrete Aggregate)",
+   "spec": "",
+   "unit": "m³",
+   "kind": "market",
+   "tags": "gravel bahs بحص",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 3000,
+     "high": 4500,
+     "currency": "SYP",
+     "date": "2026-09-24",
+     "source": "Shofey – Damascus building material prices",
+     "url": "https://shofey.com/blog/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%AF%D9%85%D8%B4%D9%82",
+     "note": "Fine concrete gravel"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 18,
+     "high": 34,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "Qiwaa – sand and gravel prices 2026",
+     "url": "https://qiwaa.com/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B1%D9%85%D9%84-%D9%88%D8%A7%D9%84%D8%A8%D8%AD%D8%B5-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-2026/",
+     "note": "Fine to coarse, by grading"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 26.465
+    }
+   ]
+  },
+  {
+   "id": "block",
+   "category": "Materials",
+   "subcategory": "Masonry",
+   "name": "Concrete Block 15 / 20 cm",
+   "spec": "",
+   "unit": "piece",
+   "kind": "market",
+   "tags": "block blok بلوك",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 38,
+     "high": 55,
+     "currency": "SYP",
+     "date": "2026-09-24",
+     "source": "Shofey – Damascus building material prices",
+     "url": "https://shofey.com/blog/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D9%85%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%AF%D9%85%D8%B4%D9%82",
+     "note": "38 SYP for 15 cm, 55 SYP for 20 cm"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 0.3,
+     "high": 0.45,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/",
+     "note": "Grade 15 block"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 0.3545
+    }
+   ]
+  },
+  {
+   "id": "readymix",
+   "category": "Materials",
+   "subcategory": "Concrete",
+   "name": "Ready-Mix Concrete C30",
+   "spec": "",
+   "unit": "m³",
+   "kind": "market",
+   "tags": "concrete ready mix beton باطون",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 90,
+     "high": 115,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/",
+     "note": "Includes mixing and delivery"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 102.5
+    }
+   ]
+  },
+  {
+   "id": "slab-concrete",
+   "category": "Materials",
+   "subcategory": "Concrete",
+   "name": "Slab Concrete + Rebar (supply & place)",
+   "spec": "",
+   "unit": "m² of slab",
+   "kind": "market",
+   "tags": "slab concrete",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 35,
+     "high": 50,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 42.5
+    }
+   ]
+  },
+  {
+   "id": "block-wall",
+   "category": "Materials",
+   "subcategory": "Masonry",
+   "name": "20 cm Block Wall with Mortar (supply & build)",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "block wall",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 14,
+     "high": 20,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 17.0
+    }
+   ]
+  },
+  {
+   "id": "building-stone",
+   "category": "Materials",
+   "subcategory": "Stone",
+   "name": "Building Stone (natural)",
+   "spec": "Awaiting a published price",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "stone hajar حجر",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "plaster-int",
+   "category": "Finishes",
+   "subcategory": "Plaster / Render",
+   "name": "Interior Plaster – Rough + Smooth (Tayneh)",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "plaster lbakh tayneh لبخ طينة",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 2.5,
+     "high": 5,
+     "currency": "USD",
+     "date": "2026-06-15",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy",
+     "note": "Materials and labour"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 3.75
+    }
+   ]
+  },
+  {
+   "id": "plaster-ext",
+   "category": "Finishes",
+   "subcategory": "Plaster / Render",
+   "name": "Exterior Rough Render",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "render plaster",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 4,
+     "high": 6,
+     "currency": "USD",
+     "date": "2026-06-15",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 5.0
+    }
+   ]
+  },
+  {
+   "id": "plaster-labour",
+   "category": "Finishes",
+   "subcategory": "Plaster / Render",
+   "name": "Plastering – Labour Only",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "plaster labour",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 2.5,
+     "high": 2.5,
+     "currency": "USD",
+     "date": "2026-09-01",
+     "source": "Gambini Designs – finishing cost 2026",
+     "url": "https://gambinidesigns.com/blog/interior-finishing-cost-syria-2026.html",
+     "note": "Surface ≈ 3.5–4.5 × floor area"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 2.5
+    }
+   ]
+  },
+  {
+   "id": "gypsum-plaster",
+   "category": "Finishes",
+   "subcategory": "Plaster / Render",
+   "name": "Gypsum Plaster Smoothing",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "gypsum jibsin",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 7,
+     "high": 11,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 9.0
+    }
+   ]
+  },
+  {
+   "id": "paint-full",
+   "category": "Finishes",
+   "subcategory": "Paint",
+   "name": "Painting – Full Job (putty, primer, finish), local paint",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "paint dihan دهان",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 3,
+     "high": 6,
+     "currency": "USD",
+     "date": "2026-06-15",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 4.5
+    }
+   ]
+  },
+  {
+   "id": "paint-int",
+   "category": "Finishes",
+   "subcategory": "Paint",
+   "name": "Interior Paint – Jotun / Caparol",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "paint jotun caparol",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 4,
+     "high": 6,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 5.0
+    }
+   ]
+  },
+  {
+   "id": "paint-ext",
+   "category": "Finishes",
+   "subcategory": "Paint",
+   "name": "Exterior Paint – Jotun / Caparol",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "paint exterior",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 6,
+     "high": 10,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 8.0
+    }
+   ]
+  },
+  {
+   "id": "ceramic-floor",
+   "category": "Finishes",
+   "subcategory": "Ceramic & Porcelain",
+   "name": "Floor Ceramic – Local",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "ceramic seramik سيراميك",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 6,
+     "high": 11,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "Qiwaa – ceramic prices 2026",
+     "url": "https://qiwaa.com/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-2026/"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 8,
+     "high": 20,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/",
+     "note": "Medium grade"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 11.25
+    }
+   ]
+  },
+  {
+   "id": "ceramic-wall",
+   "category": "Finishes",
+   "subcategory": "Ceramic & Porcelain",
+   "name": "Wall Ceramic 30×60 – Local",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "ceramic wall",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 5,
+     "high": 6,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "Qiwaa – ceramic prices 2026",
+     "url": "https://qiwaa.com/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-2026/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 5.5
+    }
+   ]
+  },
+  {
+   "id": "porcelain-local",
+   "category": "Finishes",
+   "subcategory": "Ceramic & Porcelain",
+   "name": "Porcelain – Local",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "porcelain tiles blat بلاط بورسلان",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 8,
+     "high": 13,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "Qiwaa – ceramic prices 2026",
+     "url": "https://qiwaa.com/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-2026/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 10.5
+    }
+   ]
+  },
+  {
+   "id": "porcelain-iran",
+   "category": "Finishes",
+   "subcategory": "Ceramic & Porcelain",
+   "name": "Porcelain – Iranian",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "porcelain tiles",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 10,
+     "high": 15,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "Qiwaa – ceramic prices 2026",
+     "url": "https://qiwaa.com/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-2026/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 12.5
+    }
+   ]
+  },
+  {
+   "id": "porcelain-ital",
+   "category": "Finishes",
+   "subcategory": "Ceramic & Porcelain",
+   "name": "Porcelain – Italian",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "porcelain tiles",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 25,
+     "high": 40,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "Qiwaa – ceramic prices 2026",
+     "url": "https://qiwaa.com/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-2026/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 32.5
+    }
+   ]
+  },
+  {
+   "id": "porcelain-8080",
+   "category": "Finishes",
+   "subcategory": "Ceramic & Porcelain",
+   "name": "Porcelain 80×80 – Material Only",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "porcelain tiles",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 8,
+     "high": 12.25,
+     "currency": "USD",
+     "date": "2026-06-15",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 10.125
+    }
+   ]
+  },
+  {
+   "id": "tile-install",
+   "category": "Finishes",
+   "subcategory": "Ceramic & Porcelain",
+   "name": "Tile / Porcelain Installation – Labour Only",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "tiling labour blat",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 2.5,
+     "high": 4,
+     "currency": "USD",
+     "date": "2026-06-15",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 3.25
+    }
+   ]
+  },
+  {
+   "id": "marble-local",
+   "category": "Finishes",
+   "subcategory": "Marble & Stone",
+   "name": "Marble – Local Syrian",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "marble rukham رخام",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 25,
+     "high": 50,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 37.5
+    }
+   ]
+  },
+  {
+   "id": "marble-import",
+   "category": "Finishes",
+   "subcategory": "Marble & Stone",
+   "name": "Marble – Turkish / Italian",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "marble",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 50,
+     "high": 100,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 75.0
+    }
+   ]
+  },
+  {
+   "id": "gypsum-board",
+   "category": "Finishes",
+   "subcategory": "Ceilings",
+   "name": "Gypsum Board False Ceiling",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "gypsum board ceiling",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 8.5,
+     "high": 12.5,
+     "currency": "USD",
+     "date": "2026-06-15",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 10.5
+    }
+   ]
+  },
+  {
+   "id": "facade-stone",
+   "category": "Finishes",
+   "subcategory": "Facade",
+   "name": "Facade – Natural Stone Cladding",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "facade stone wajiha واجهة حجر",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 40,
+     "high": 75,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 57.5
+    }
+   ]
+  },
+  {
+   "id": "facade-artstone",
+   "category": "Finishes",
+   "subcategory": "Facade",
+   "name": "Facade – Artificial Stone",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "facade",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 20,
+     "high": 38,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 29.0
+    }
+   ]
+  },
+  {
+   "id": "facade-alu",
+   "category": "Finishes",
+   "subcategory": "Facade",
+   "name": "Facade – Aluminium Composite Cladding",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "facade alucobond",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 32,
+     "high": 55,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 43.5
+    }
+   ]
+  },
+  {
+   "id": "facade-wpc",
+   "category": "Finishes",
+   "subcategory": "Facade",
+   "name": "Facade – WPC Wood Cladding",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "facade wpc",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 28,
+     "high": 45,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 36.5
+    }
+   ]
+  },
+  {
+   "id": "window-local",
+   "category": "Finishes",
+   "subcategory": "Aluminium & Doors",
+   "name": "Aluminium Windows – Profile 60, Local / Iranian",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "aluminium windows",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 45,
+     "high": 72,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 58.5
+    }
+   ]
+  },
+  {
+   "id": "window-tr",
+   "category": "Finishes",
+   "subcategory": "Aluminium & Doors",
+   "name": "Aluminium Windows – Profile 60, Turkish",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "aluminium windows",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 60,
+     "high": 95,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 77.5
+    }
+   ]
+  },
+  {
+   "id": "window-tb",
+   "category": "Finishes",
+   "subcategory": "Aluminium & Doors",
+   "name": "Aluminium Windows – Thermal Break, Turkish",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "aluminium windows",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 100,
+     "high": 145,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 122.5
+    }
+   ]
+  },
+  {
+   "id": "door-mdf",
+   "category": "Finishes",
+   "subcategory": "Aluminium & Doors",
+   "name": "Interior Door – Local MDF",
+   "spec": "",
+   "unit": "piece",
+   "kind": "market",
+   "tags": "door",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 80,
+     "high": 140,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 110.0
+    }
+   ]
+  },
+  {
+   "id": "elec-install",
+   "category": "Finishes",
+   "subcategory": "MEP",
+   "name": "Electrical Installation – Local / Chinese Materials",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "electrical",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 7,
+     "high": 12,
+     "currency": "USD",
+     "date": "2026-05-29",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 9.5
+    }
+   ]
+  },
+  {
+   "id": "excavator",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Excavator (Poclain) 20–30 t – with operator",
+   "spec": "Awaiting a published price",
+   "unit": "hour",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "loader",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Wheel Loader (Trax) – with operator",
+   "spec": "Awaiting a published price",
+   "unit": "hour",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "backhoe",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Backhoe Loader (JCB) – with operator",
+   "spec": "Awaiting a published price",
+   "unit": "hour",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "dumptruck",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Dump Truck (Qallab) – per trip",
+   "spec": "Awaiting a published price",
+   "unit": "trip",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "mixer",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Concrete Mixer Truck",
+   "spec": "Awaiting a published price",
+   "unit": "day",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "pump",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Concrete Pump",
+   "spec": "Awaiting a published price",
+   "unit": "pour",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "mobilecrane",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Mobile Crane 25–50 t",
+   "spec": "Awaiting a published price",
+   "unit": "day",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "watertanker",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Water Tanker",
+   "spec": "Awaiting a published price",
+   "unit": "trip",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "compactor",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Vibratory Roller / Compactor",
+   "spec": "Awaiting a published price",
+   "unit": "day",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "generator",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Generator 100 kVA",
+   "spec": "Awaiting a published price",
+   "unit": "day",
+   "kind": "market",
+   "tags": "equipment rental ijar آليات",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "crane-lift",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Crane Lift – Water Tank to Roof",
+   "spec": "",
+   "unit": "lift",
+   "kind": "market",
+   "tags": "crane",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 60,
+     "high": 90,
+     "currency": "USD",
+     "date": "2026-06-15",
+     "source": "Kulfa – Syria price index",
+     "url": "https://kulfa.app/prices.php?c=sy"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 75.0
+    }
+   ]
+  },
+  {
+   "id": "gasoline95",
+   "category": "Fuel",
+   "subcategory": "Gasoline",
+   "name": "Gasoline Octane 95",
+   "spec": "",
+   "unit": "litre",
+   "kind": "official",
+   "tags": "benzine benzin بنزين",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 195,
+     "high": 195,
+     "currency": "SYP",
+     "date": "2026-09-16",
+     "source": "Syrian Petroleum Company price list (via Syfatora)",
+     "url": "https://syfatora.com/fuel"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 195,
+     "high": 195,
+     "currency": "SYP",
+     "date": "2026-10-05",
+     "source": "Council of Ministers fuel announcement (report)",
+     "url": "https://www.drama-s7.com/2026/10/blog-post_924.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 1.4004
+    }
+   ]
+  },
+  {
+   "id": "gasoline90",
+   "category": "Fuel",
+   "subcategory": "Gasoline",
+   "name": "Gasoline Octane 90",
+   "spec": "",
+   "unit": "litre",
+   "kind": "official",
+   "tags": "benzine بنزين",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 185,
+     "high": 185,
+     "currency": "SYP",
+     "date": "2026-09-16",
+     "source": "Syrian Petroleum Company price list (via Syfatora)",
+     "url": "https://syfatora.com/fuel"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 185,
+     "high": 185,
+     "currency": "SYP",
+     "date": "2026-10-05",
+     "source": "Council of Ministers fuel announcement (report)",
+     "url": "https://www.drama-s7.com/2026/10/blog-post_924.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 1.3285
+    }
+   ]
+  },
+  {
+   "id": "diesel",
+   "category": "Fuel",
+   "subcategory": "Diesel",
+   "name": "Diesel (Mazout)",
+   "spec": "",
+   "unit": "litre",
+   "kind": "official",
+   "tags": "diesel mazout مازوت",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 175,
+     "high": 175,
+     "currency": "SYP",
+     "date": "2026-09-16",
+     "source": "Syrian Petroleum Company price list (via Syfatora)",
+     "url": "https://syfatora.com/fuel"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 175,
+     "high": 175,
+     "currency": "SYP",
+     "date": "2026-10-05",
+     "source": "Council of Ministers fuel announcement (report)",
+     "url": "https://www.drama-s7.com/2026/10/blog-post_924.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 1.2567
+    }
+   ]
+  },
+  {
+   "id": "lpg-home",
+   "category": "Fuel",
+   "subcategory": "Gas",
+   "name": "Household Gas Cylinder (10 kg)",
+   "spec": "",
+   "unit": "cylinder",
+   "kind": "official",
+   "tags": "gas ghaz غاز",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 1600,
+     "high": 1600,
+     "currency": "SYP",
+     "date": "2026-09-16",
+     "source": "Syrian Petroleum Company price list (via Syfatora)",
+     "url": "https://syfatora.com/fuel"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 11.4901
+    }
+   ]
+  },
+  {
+   "id": "lpg-ind",
+   "category": "Fuel",
+   "subcategory": "Gas",
+   "name": "Industrial Gas Cylinder",
+   "spec": "",
+   "unit": "cylinder",
+   "kind": "official",
+   "tags": "gas industrial",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 2400,
+     "high": 2400,
+     "currency": "SYP",
+     "date": "2026-09-16",
+     "source": "Syrian Petroleum Company price list (via Syfatora)",
+     "url": "https://syfatora.com/fuel"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 2560,
+     "high": 2560,
+     "currency": "SYP",
+     "date": "2026-10-05",
+     "source": "Council of Ministers fuel announcement (report)",
+     "url": "https://www.drama-s7.com/2026/10/blog-post_924.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 17.8097
+    }
+   ]
+  },
+  {
+   "id": "fueloil",
+   "category": "Fuel",
+   "subcategory": "Fuel Oil",
+   "name": "Fuel Oil (Fuel)",
+   "spec": "",
+   "unit": "ton",
+   "kind": "official",
+   "tags": "fuel oil fiol فيول",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 52800,
+     "high": 52800,
+     "currency": "SYP",
+     "date": "2026-10-05",
+     "source": "Council of Ministers fuel announcement (report)",
+     "url": "https://www.drama-s7.com/2026/10/blog-post_924.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 379.1741
+    }
+   ]
+  },
+  {
+   "id": "worker",
+   "category": "Labour",
+   "subcategory": "Daily Wages",
+   "name": "Construction Labourer",
+   "spec": "",
+   "unit": "day",
+   "kind": "market",
+   "tags": "worker amil عامل labour",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 15,
+     "high": 18,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 16.5
+    }
+   ]
+  },
+  {
+   "id": "skilled",
+   "category": "Labour",
+   "subcategory": "Daily Wages",
+   "name": "Skilled Tradesman (mason, tiler, carpenter, operator)",
+   "spec": "",
+   "unit": "day",
+   "kind": "market",
+   "tags": "craftsman sinaye صنايعي mason tiler carpenter",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 20,
+     "high": 35,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 27.5
+    }
+   ]
+  },
+  {
+   "id": "elec-plumb",
+   "category": "Labour",
+   "subcategory": "Daily Wages",
+   "name": "Electrician / Plumber",
+   "spec": "",
+   "unit": "day",
+   "kind": "market",
+   "tags": "electrician plumber",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 25,
+     "high": 45,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 35.0
+    }
+   ]
+  },
+  {
+   "id": "daily-avg",
+   "category": "Labour",
+   "subcategory": "Daily Wages",
+   "name": "Daily Worker – National Average (all sectors)",
+   "spec": "",
+   "unit": "day",
+   "kind": "market",
+   "tags": "daily worker",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 966,
+     "high": 966,
+     "currency": "SYP",
+     "date": "2026-08-15",
+     "source": "Dama Post – daily worker wage",
+     "url": "https://damapost.com/15/08/2026/%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%84-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%88%D9%85-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D8%A3%D8%AC%D8%B1-%D9%84%D8%A7-%D9%8A%D9%84%D8%AD%D9%82-%D8%A8%D9%83%D9%84/123683/",
+     "note": "June 2026 average"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 6.9372
+    }
+   ]
+  },
+  {
+   "id": "foreman",
+   "category": "Labour",
+   "subcategory": "Salaries",
+   "name": "Site Foreman",
+   "spec": "Awaiting a published price",
+   "unit": "month",
+   "kind": "market",
+   "tags": "foreman formani فورمان",
+   "prices": [],
+   "history": []
+  },
+  {
+   "id": "site-eng",
+   "category": "Labour",
+   "subcategory": "Salaries",
+   "name": "Site Supervising Engineer",
+   "spec": "",
+   "unit": "month",
+   "kind": "market",
+   "tags": "engineer muhandis مهندس",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 600,
+     "high": 1200,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 900.0
+    }
+   ]
+  },
+  {
+   "id": "engineer",
+   "category": "Labour",
+   "subcategory": "Salaries",
+   "name": "Engineer – General (all fields)",
+   "spec": "",
+   "unit": "month",
+   "kind": "market",
+   "tags": "engineer",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 30000,
+     "high": 125000,
+     "currency": "SYP",
+     "date": "2026-10-01",
+     "source": "Wazaif Syria – salary guide 2026",
+     "url": "https://wazaifsyria.com/salary",
+     "note": "Estimated range; average 60,000"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 556.553
+    }
+   ]
+  },
+  {
+   "id": "pm",
+   "category": "Labour",
+   "subcategory": "Salaries",
+   "name": "Project Manager",
+   "spec": "",
+   "unit": "month",
+   "kind": "market",
+   "tags": "project manager",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 120000,
+     "high": 210000,
+     "currency": "SYP",
+     "date": "2026-10-01",
+     "source": "Wazaif Syria – salary guide 2026",
+     "url": "https://wazaifsyria.com/salary"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 1184.9192
+    }
+   ]
+  },
+  {
+   "id": "accountant",
+   "category": "Labour",
+   "subcategory": "Salaries",
+   "name": "Accountant",
+   "spec": "",
+   "unit": "month",
+   "kind": "market",
+   "tags": "admin accountant idari إداري",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 25000,
+     "high": 110000,
+     "currency": "SYP",
+     "date": "2026-10-01",
+     "source": "Wazaif Syria – salary guide 2026",
+     "url": "https://wazaifsyria.com/salary",
+     "note": "Average 50,000"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 484.7397
+    }
+   ]
+  },
+  {
+   "id": "hr",
+   "category": "Labour",
+   "subcategory": "Salaries",
+   "name": "HR Manager",
+   "spec": "",
+   "unit": "month",
+   "kind": "market",
+   "tags": "admin hr",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 122000,
+     "high": 195000,
+     "currency": "SYP",
+     "date": "2026-10-01",
+     "source": "Wazaif Syria – salary guide 2026",
+     "url": "https://wazaifsyria.com/salary"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 1138.2406
+    }
+   ]
+  },
+  {
+   "id": "driver",
+   "category": "Labour",
+   "subcategory": "Salaries",
+   "name": "Driver",
+   "spec": "",
+   "unit": "month",
+   "kind": "market",
+   "tags": "driver",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 15000,
+     "high": 35000,
+     "currency": "SYP",
+     "date": "2026-10-01",
+     "source": "Wazaif Syria – salary guide 2026",
+     "url": "https://wazaifsyria.com/salary",
+     "note": "Average 22,000"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 179.5332
+    }
+   ]
+  },
+  {
+   "id": "minwage",
+   "category": "Labour",
+   "subcategory": "Salaries",
+   "name": "National Minimum Wage",
+   "spec": "",
+   "unit": "month",
+   "kind": "official",
+   "tags": "minimum wage",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 12560,
+     "high": 12560,
+     "currency": "SYP",
+     "date": "2026-09-15",
+     "source": "Al-Sifr – fuel vs minimum wage",
+     "url": "https://alsifr.org/gasoline-syria"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 90.1975
+    }
+   ]
+  },
+  {
+   "id": "supervision",
+   "category": "Labour",
+   "subcategory": "Engineering Fees",
+   "name": "Engineering Supervision Fee",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "supervision engineer fee",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 3,
+     "high": 7,
+     "currency": "USD",
+     "date": "2026-06-18",
+     "source": "Imtilak – construction costs in Syria",
+     "url": "https://www.imtilak.sy/ar/articles/construction-costs-in-syria"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 5.0
+    }
+   ]
+  },
+  {
+   "id": "cost-structure",
+   "category": "Building Cost",
+   "subcategory": "Cost per m²",
+   "name": "Structure Only (skeleton)",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "cost skeleton adhm عظم",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 240,
+     "high": 350,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "CMS Levant – Damascus construction cost",
+     "url": "https://www.cmslevant.com/blog/construction-cost-syria-2026.html"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 120,
+     "high": 150,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 215.0
+    }
+   ]
+  },
+  {
+   "id": "cost-turnkey",
+   "category": "Building Cost",
+   "subcategory": "Cost per m²",
+   "name": "Turnkey – Medium Finishing",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "cost turnkey iksa إكساء",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 400,
+     "high": 650,
+     "currency": "USD",
+     "date": "2026-10-01",
+     "source": "CMS Levant – Damascus construction cost",
+     "url": "https://www.cmslevant.com/blog/construction-cost-syria-2026.html"
+    },
+    {
+     "region": "Syria (general)",
+     "low": 255,
+     "high": 320,
+     "currency": "USD",
+     "date": "2026-10-04",
+     "source": "CIP Syria – building cost guide 2026",
+     "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 406.25
+    }
+   ]
+  },
+  {
+   "id": "cost-finish",
+   "category": "Building Cost",
+   "subcategory": "Cost per m²",
+   "name": "Finishing Only – Mid Range",
+   "spec": "",
+   "unit": "m²",
+   "kind": "market",
+   "tags": "finishing iksa",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 200,
+     "high": 320,
+     "currency": "USD",
+     "date": "2026-09-01",
+     "source": "Gambini Designs – finishing cost 2026",
+     "url": "https://gambinidesigns.com/blog/interior-finishing-cost-syria-2026.html"
+    },
+    {
+     "region": "Aleppo",
+     "low": 170,
+     "high": 300,
+     "currency": "USD",
+     "date": "2026-09-01",
+     "source": "Gambini Designs – finishing cost 2026",
+     "url": "https://gambinidesigns.com/blog/interior-finishing-cost-syria-2026.html"
+    },
+    {
+     "region": "Homs",
+     "low": 165,
+     "high": 285,
+     "currency": "USD",
+     "date": "2026-09-01",
+     "source": "Gambini Designs – finishing cost 2026",
+     "url": "https://gambinidesigns.com/blog/interior-finishing-cost-syria-2026.html"
+    },
+    {
+     "region": "Latakia",
+     "low": 185,
+     "high": 300,
+     "currency": "USD",
+     "date": "2026-09-01",
+     "source": "Gambini Designs – finishing cost 2026",
+     "url": "https://gambinidesigns.com/blog/interior-finishing-cost-syria-2026.html"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-23",
+     "usd": 240.625
+    }
+   ]
+  }
+ ]
+}
