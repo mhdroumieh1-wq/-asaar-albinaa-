@@ -1,7 +1,7 @@
 {
  "app": "Syria Construction Prices",
  "schema": 1,
- "updated": "2026-10-23T16:30:16+03:00",
+ "updated": "2026-10-24T06:57:31+03:00",
  "fx": {
   "official": {
    "rate": 122.0,
@@ -10,10 +10,10 @@
    "url": "https://www.verify-sy.com/ar/topic/economy/newsroom/exchange-rates-in-syria-22OCT"
   },
   "market": {
-   "rate": 139.25,
-   "date": "2026-10-22",
-   "source": "Aksalser – parallel market rates",
-   "url": "https://www.aksalser.com/news/2026/10/22/%D8%B3%D8%B9%D8%B1-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%88-%D8%A7%D9%84%D9%8A%D9%88%D8%B1%D9%88-%D9%88-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%85%D9%82%D8%A7%D8%A8%D9%84-2225/"
+   "rate": 141.25,
+   "date": "2026-10-23",
+   "source": "Syria TV – live exchange rates (Damascus, buy 14,100 / sell 14,150 old SYP)",
+   "url": "https://www.syria.tv/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%AA-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D9%84%D9%8A%D8%B1%D8%A9-%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1"
   },
   "note": "New Syrian pound (2 zeros removed in 2026). Conversions use the market rate."
  },
@@ -68,19 +68,23 @@
     },
     {
      "region": "Syria (general)",
-     "low": 850,
-     "high": 950,
      "currency": "USD",
-     "date": "2026-06-01",
+     "date": "2026-10-02",
      "source": "Yahya Construction – cost per m² 2026",
      "url": "https://yahyaconstruction.com/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D9%85%D8%AA%D8%B1-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7/",
-     "note": "Retail estimate"
+     "low": 850,
+     "high": 950,
+     "note": "12 mm, retail estimate (page last updated 2 Oct 2026)"
     }
    ],
    "history": [
     {
      "date": "2026-10-23",
      "usd": 828.842
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 824.351
     }
    ]
   },
@@ -112,12 +116,26 @@
      "date": "2026-10-04",
      "source": "CIP Syria – building cost guide 2026",
      "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    },
+    {
+     "region": "Syria (general)",
+     "currency": "USD",
+     "date": "2026-10-02",
+     "source": "Yahya Construction – cost per m² 2026",
+     "url": "https://yahyaconstruction.com/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D9%85%D8%AA%D8%B1-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7/",
+     "low": 150,
+     "high": 180,
+     "note": "Cement per ton, retail estimate; bagged/bulk not specified"
     }
    ],
    "history": [
     {
      "date": "2026-10-23",
      "usd": 143.0969
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 149.6608
     }
    ]
   },
@@ -145,6 +163,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 110.0
+    },
+    {
+     "date": "2026-10-24",
      "usd": 110.0
     }
    ]
@@ -184,6 +206,10 @@
     {
      "date": "2026-10-23",
      "usd": 27.0103
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 26.7942
     }
    ]
   },
@@ -222,6 +248,10 @@
     {
      "date": "2026-10-23",
      "usd": 26.465
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 26.2743
     }
    ]
   },
@@ -260,6 +290,10 @@
     {
      "date": "2026-10-23",
      "usd": 0.3545
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 0.3521
     }
    ]
   },
@@ -288,6 +322,10 @@
     {
      "date": "2026-10-23",
      "usd": 102.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 102.5
     }
    ]
   },
@@ -314,6 +352,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 42.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 42.5
     }
    ]
@@ -342,6 +384,10 @@
     {
      "date": "2026-10-23",
      "usd": 17.0
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 17.0
     }
    ]
   },
@@ -350,12 +396,28 @@
    "category": "Materials",
    "subcategory": "Stone",
    "name": "Building Stone (natural)",
-   "spec": "Awaiting a published price",
+   "spec": "",
    "unit": "m²",
    "kind": "market",
    "tags": "stone hajar حجر",
-   "prices": [],
-   "history": []
+   "prices": [
+    {
+     "region": "Hama",
+     "currency": "USD",
+     "date": "2026-10-23",
+     "source": "Hawar News (ANHA) – stone prices rise in Hama",
+     "url": "https://hawarnews.com/ar/148271",
+     "low": 11,
+     "high": 11,
+     "note": "Quarry PRODUCTION cost of white limestone (up from $7); not a retail price. Basalt production cost $7/m²"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "usd": 11.0
+    }
+   ]
   },
   {
    "id": "plaster-int",
@@ -381,6 +443,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 3.75
+    },
+    {
+     "date": "2026-10-24",
      "usd": 3.75
     }
    ]
@@ -408,6 +474,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 5.0
+    },
+    {
+     "date": "2026-10-24",
      "usd": 5.0
     }
    ]
@@ -437,6 +507,10 @@
     {
      "date": "2026-10-23",
      "usd": 2.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 2.5
     }
    ]
   },
@@ -463,6 +537,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 9.0
+    },
+    {
+     "date": "2026-10-24",
      "usd": 9.0
     }
    ]
@@ -491,6 +569,10 @@
     {
      "date": "2026-10-23",
      "usd": 4.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 4.5
     }
    ]
   },
@@ -518,6 +600,10 @@
     {
      "date": "2026-10-23",
      "usd": 5.0
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 5.0
     }
    ]
   },
@@ -544,6 +630,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 8.0
+    },
+    {
+     "date": "2026-10-24",
      "usd": 8.0
     }
    ]
@@ -582,6 +672,10 @@
     {
      "date": "2026-10-23",
      "usd": 11.25
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 11.25
     }
    ]
   },
@@ -608,6 +702,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 5.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 5.5
     }
    ]
@@ -636,6 +734,10 @@
     {
      "date": "2026-10-23",
      "usd": 10.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 10.5
     }
    ]
   },
@@ -662,6 +764,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 12.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 12.5
     }
    ]
@@ -690,6 +796,10 @@
     {
      "date": "2026-10-23",
      "usd": 32.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 32.5
     }
    ]
   },
@@ -716,6 +826,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 10.125
+    },
+    {
+     "date": "2026-10-24",
      "usd": 10.125
     }
    ]
@@ -744,6 +858,10 @@
     {
      "date": "2026-10-23",
      "usd": 3.25
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 3.25
     }
    ]
   },
@@ -770,6 +888,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 37.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 37.5
     }
    ]
@@ -798,6 +920,10 @@
     {
      "date": "2026-10-23",
      "usd": 75.0
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 75.0
     }
    ]
   },
@@ -824,6 +950,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 10.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 10.5
     }
    ]
@@ -852,6 +982,10 @@
     {
      "date": "2026-10-23",
      "usd": 57.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 57.5
     }
    ]
   },
@@ -878,6 +1012,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 29.0
+    },
+    {
+     "date": "2026-10-24",
      "usd": 29.0
     }
    ]
@@ -906,6 +1044,10 @@
     {
      "date": "2026-10-23",
      "usd": 43.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 43.5
     }
    ]
   },
@@ -932,6 +1074,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 36.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 36.5
     }
    ]
@@ -960,6 +1106,10 @@
     {
      "date": "2026-10-23",
      "usd": 58.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 58.5
     }
    ]
   },
@@ -986,6 +1136,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 77.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 77.5
     }
    ]
@@ -1014,6 +1168,10 @@
     {
      "date": "2026-10-23",
      "usd": 122.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 122.5
     }
    ]
   },
@@ -1041,6 +1199,10 @@
     {
      "date": "2026-10-23",
      "usd": 110.0
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 110.0
     }
    ]
   },
@@ -1067,6 +1229,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 9.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 9.5
     }
    ]
@@ -1215,6 +1381,10 @@
     {
      "date": "2026-10-23",
      "usd": 75.0
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 75.0
     }
    ]
   },
@@ -1245,12 +1415,25 @@
      "date": "2026-10-05",
      "source": "Council of Ministers fuel announcement (report)",
      "url": "https://www.drama-s7.com/2026/10/blog-post_924.html"
+    },
+    {
+     "region": "Syria (general)",
+     "currency": "SYP",
+     "date": "2026-10-23",
+     "source": "Baydar – daily fuel prices",
+     "url": "https://baydar.sy/prices/fuel-prices.html",
+     "low": 195,
+     "high": 195
     }
    ],
    "history": [
     {
      "date": "2026-10-23",
      "usd": 1.4004
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 1.3805
     }
    ]
   },
@@ -1281,12 +1464,25 @@
      "date": "2026-10-05",
      "source": "Council of Ministers fuel announcement (report)",
      "url": "https://www.drama-s7.com/2026/10/blog-post_924.html"
+    },
+    {
+     "region": "Syria (general)",
+     "currency": "SYP",
+     "date": "2026-10-23",
+     "source": "Baydar – daily fuel prices",
+     "url": "https://baydar.sy/prices/fuel-prices.html",
+     "low": 185,
+     "high": 185
     }
    ],
    "history": [
     {
      "date": "2026-10-23",
      "usd": 1.3285
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 1.3097
     }
    ]
   },
@@ -1317,12 +1513,25 @@
      "date": "2026-10-05",
      "source": "Council of Ministers fuel announcement (report)",
      "url": "https://www.drama-s7.com/2026/10/blog-post_924.html"
+    },
+    {
+     "region": "Syria (general)",
+     "currency": "SYP",
+     "date": "2026-10-23",
+     "source": "Baydar – daily fuel prices",
+     "url": "https://baydar.sy/prices/fuel-prices.html",
+     "low": 175,
+     "high": 175
     }
    ],
    "history": [
     {
      "date": "2026-10-23",
      "usd": 1.2567
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 1.2389
     }
    ]
   },
@@ -1344,12 +1553,25 @@
      "date": "2026-09-16",
      "source": "Syrian Petroleum Company price list (via Syfatora)",
      "url": "https://syfatora.com/fuel"
+    },
+    {
+     "region": "Syria (general)",
+     "currency": "SYP",
+     "date": "2026-10-23",
+     "source": "Baydar – daily fuel prices",
+     "url": "https://baydar.sy/prices/fuel-prices.html",
+     "low": 1600,
+     "high": 1600
     }
    ],
    "history": [
     {
      "date": "2026-10-23",
      "usd": 11.4901
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 11.3274
     }
    ]
   },
@@ -1386,6 +1608,10 @@
     {
      "date": "2026-10-23",
      "usd": 17.8097
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 17.5575
     }
    ]
   },
@@ -1413,6 +1639,10 @@
     {
      "date": "2026-10-23",
      "usd": 379.1741
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 373.8053
     }
    ]
   },
@@ -1439,6 +1669,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 16.5
+    },
+    {
+     "date": "2026-10-24",
      "usd": 16.5
     }
    ]
@@ -1467,6 +1701,10 @@
     {
      "date": "2026-10-23",
      "usd": 27.5
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 27.5
     }
    ]
   },
@@ -1493,6 +1731,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 35.0
+    },
+    {
+     "date": "2026-10-24",
      "usd": 35.0
     }
    ]
@@ -1522,6 +1764,10 @@
     {
      "date": "2026-10-23",
      "usd": 6.9372
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 6.8389
     }
    ]
   },
@@ -1561,6 +1807,10 @@
     {
      "date": "2026-10-23",
      "usd": 900.0
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 900.0
     }
    ]
   },
@@ -1579,7 +1829,7 @@
      "low": 30000,
      "high": 125000,
      "currency": "SYP",
-     "date": "2026-10-01",
+     "date": "2026-10-23",
      "source": "Wazaif Syria – salary guide 2026",
      "url": "https://wazaifsyria.com/salary",
      "note": "Estimated range; average 60,000"
@@ -1589,6 +1839,10 @@
     {
      "date": "2026-10-23",
      "usd": 556.553
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 548.6726
     }
    ]
   },
@@ -1607,7 +1861,7 @@
      "low": 120000,
      "high": 210000,
      "currency": "SYP",
-     "date": "2026-10-01",
+     "date": "2026-10-23",
      "source": "Wazaif Syria – salary guide 2026",
      "url": "https://wazaifsyria.com/salary"
     }
@@ -1616,6 +1870,10 @@
     {
      "date": "2026-10-23",
      "usd": 1184.9192
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 1168.1416
     }
    ]
   },
@@ -1634,7 +1892,7 @@
      "low": 25000,
      "high": 110000,
      "currency": "SYP",
-     "date": "2026-10-01",
+     "date": "2026-10-23",
      "source": "Wazaif Syria – salary guide 2026",
      "url": "https://wazaifsyria.com/salary",
      "note": "Average 50,000"
@@ -1644,6 +1902,10 @@
     {
      "date": "2026-10-23",
      "usd": 484.7397
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 477.8761
     }
    ]
   },
@@ -1662,7 +1924,7 @@
      "low": 122000,
      "high": 195000,
      "currency": "SYP",
-     "date": "2026-10-01",
+     "date": "2026-10-23",
      "source": "Wazaif Syria – salary guide 2026",
      "url": "https://wazaifsyria.com/salary"
     }
@@ -1671,6 +1933,10 @@
     {
      "date": "2026-10-23",
      "usd": 1138.2406
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 1122.1239
     }
    ]
   },
@@ -1689,7 +1955,7 @@
      "low": 15000,
      "high": 35000,
      "currency": "SYP",
-     "date": "2026-10-01",
+     "date": "2026-10-23",
      "source": "Wazaif Syria – salary guide 2026",
      "url": "https://wazaifsyria.com/salary",
      "note": "Average 22,000"
@@ -1699,6 +1965,10 @@
     {
      "date": "2026-10-23",
      "usd": 179.5332
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 176.9912
     }
    ]
   },
@@ -1726,6 +1996,10 @@
     {
      "date": "2026-10-23",
      "usd": 90.1975
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 88.9204
     }
    ]
   },
@@ -1752,6 +2026,10 @@
    "history": [
     {
      "date": "2026-10-23",
+     "usd": 5.0
+    },
+    {
+     "date": "2026-10-24",
      "usd": 5.0
     }
    ]
@@ -1783,12 +2061,36 @@
      "date": "2026-10-04",
      "source": "CIP Syria – building cost guide 2026",
      "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    },
+    {
+     "region": "Syria (general)",
+     "currency": "USD",
+     "date": "2026-10-02",
+     "source": "Yahya Construction – cost per m² 2026",
+     "url": "https://yahyaconstruction.com/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D9%85%D8%AA%D8%B1-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7/",
+     "low": 200,
+     "high": 350,
+     "note": "Shell (structure only) estimate"
+    },
+    {
+     "region": "Hama",
+     "currency": "USD",
+     "date": "2026-10-23",
+     "source": "Hawar News (ANHA) – stone prices rise in Hama",
+     "url": "https://hawarnews.com/ar/148271",
+     "low": 120,
+     "high": 120,
+     "note": "Engineer quote: construction cost rose from under $100 to over $120 per m² (rural Hama, basic construction)"
     }
    ],
    "history": [
     {
      "date": "2026-10-23",
      "usd": 215.0
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 206.25
     }
    ]
   },
@@ -1819,12 +2121,36 @@
      "date": "2026-10-04",
      "source": "CIP Syria – building cost guide 2026",
      "url": "https://cip.sy/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1/"
+    },
+    {
+     "region": "Syria (general)",
+     "currency": "USD",
+     "date": "2026-10-02",
+     "source": "Yahya Construction – cost per m² 2026",
+     "url": "https://yahyaconstruction.com/ar/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D9%85%D8%AA%D8%B1-%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%A1-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7/",
+     "low": 350,
+     "high": 650,
+     "note": "Structure + finishing total estimate"
+    },
+    {
+     "region": "Aleppo",
+     "low": 360,
+     "high": 600,
+     "currency": "USD",
+     "date": "2026-06-11",
+     "source": "CMS Levant – Aleppo building & finishing cost 2026",
+     "url": "https://www.cmslevant.com/blog/tklft-bina2-tshtib-aleppo-2026.html",
+     "note": "Mid-range turnkey"
     }
    ],
    "history": [
     {
      "date": "2026-10-23",
      "usd": 406.25
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 448.125
     }
    ]
   },
@@ -1879,6 +2205,66 @@
     {
      "date": "2026-10-23",
      "usd": 240.625
+    },
+    {
+     "date": "2026-10-24",
+     "usd": 240.625
+    }
+   ]
+  },
+  {
+   "id": "diesel-equip",
+   "category": "Fuel",
+   "subcategory": "Diesel",
+   "name": "Diesel – productive uses & heavy machinery",
+   "spec": "Tier for productive/service uses, engineering equipment and heavy machinery",
+   "unit": "litre",
+   "kind": "official",
+   "tags": "diesel mazout heavy machinery equipment مازوت آليات هندسية",
+   "prices": [
+    {
+     "region": "Syria (general)",
+     "low": 150,
+     "high": 150,
+     "currency": "SYP",
+     "date": "2026-09-25",
+     "source": "SANA – new diesel tiers",
+     "url": "https://sana.sy/economy/syrian-economy/2589414/",
+     "note": "Tiers: subsidised 115 (heating/agriculture), 150 (productive uses, engineering equipment, heavy machinery), 175 standard"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "usd": 1.0619
+    }
+   ]
+  },
+  {
+   "id": "water-tanker-m3",
+   "category": "Equipment",
+   "subcategory": "Rental",
+   "name": "Water delivered by tanker (per m³)",
+   "spec": "Private tanker water, price per 1,000 litres",
+   "unit": "m³",
+   "kind": "market",
+   "tags": "water tanker sahrij صهريج مياه",
+   "prices": [
+    {
+     "region": "Damascus",
+     "low": 500,
+     "high": 800,
+     "currency": "SYP",
+     "date": "2026-08-11",
+     "source": "Enab Baladi – water rationing in Damascus",
+     "url": "https://www.enabbaladi.net/820465/%D8%AA%D9%82%D9%86%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D9%8A%D9%81%D8%A7%D9%82%D9%85-%D9%85%D8%B9%D8%A7%D9%86%D8%A7%D8%A9-%D8%B3%D9%83%D8%A7%D9%86-%D8%AF%D9%85%D8%B4%D9%82-%D8%A7%D9%84/",
+     "note": "50,000–80,000 old SYP per m³; varies by seller"
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-10-24",
+     "usd": 4.6018
     }
    ]
   }
